@@ -1147,22 +1147,270 @@ audio::-webkit-media-controls-time-remaining-display {
 /* Responsive */
 @media (max-width: 640px) {
     .header {
-        padding: 16px 20px;
+        padding: 12px 16px;
     }
     
-    .logo {
-        font-size: 20px;
+    .logo-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
     }
     
-    .byline {
-        font-size: 11px;
-        padding: 4px 10px;
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    .header-meta {
+        display: none;
     }
     
     .main {
         padding: 0 16px;
     }
     
+    /* Hero Mobile */
+    .hero-v2 {
+        padding: 40px 0 32px;
+    }
+    
+    .hero-badge {
+        font-size: 11px;
+        padding: 8px 14px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-badge svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+        margin-bottom: 16px;
+    }
+    
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    
+    .hero-description br {
+        display: none;
+    }
+    
+    .hero-date {
+        padding: 12px 24px;
+    }
+    
+    .date-value {
+        font-size: 18px;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    /* Stats Bar Mobile */
+    .stats-bar {
+        gap: 16px;
+        padding: 16px;
+        margin: 24px 0;
+    }
+    
+    .stat-num {
+        font-size: 22px;
+    }
+    
+    .stat-label {
+        font-size: 11px;
+    }
+    
+    .stat-divider {
+        height: 24px;
+    }
+    
+    /* Section Mobile */
+    .section {
+        padding: 32px 0;
+    }
+    
+    .section-header {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+    
+    .section-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+    
+    .section-title {
+        font-size: 17px;
+    }
+    
+    .section-desc {
+        font-size: 13px;
+    }
+    
+    /* Brief List Mobile */
+    .brief-list-v2 {
+        gap: 10px;
+    }
+    
+    .brief-list-v2 li {
+        padding: 16px;
+        border-radius: 12px;
+        gap: 4px;
+    }
+    
+    .brief-list-v2 li:hover {
+        transform: none;
+    }
+    
+    .brief-list-v2 li strong {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    
+    .brief-list-v2 li .desc {
+        font-size: 13px;
+    }
+    
+    /* Cards Mobile - SIMPLIFIED */
+    .cards-v2 {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .card-v2 {
+        padding: 16px;
+        border-radius: 12px;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .card-v2:hover {
+        transform: translateY(-2px);
+    }
+    
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    
+    .card-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .card-content {
+        flex: 1;
+        min-width: 0;
+    }
+    
+    .card-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+    
+    .card-tag {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    
+    .card-arrow-mobile {
+        font-size: 16px;
+        color: var(--accent);
+    }
+    
+    .card-content h3 {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    
+    .card-content p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+    
+    .card-arrow-v2,
+    .card-meta {
+        display: none;
+    }
+    
+    /* Archive Mobile */
+    .archive-item-v2 {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+    
+    .archive-date-v2 {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+    
+    .archive-title-v2 {
+        font-size: 14px;
+    }
+    
+    /* CTA Mobile */
+    .cta-section {
+        padding: 32px 24px;
+        margin: 32px 0;
+        border-radius: 16px;
+    }
+    
+    .cta-icon {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    
+    .cta-content h3 {
+        font-size: 17px;
+    }
+    
+    .cta-content p {
+        font-size: 14px;
+    }
+    
+    .cta-content p br {
+        display: none;
+    }
+    
+    .cta-features {
+        gap: 8px;
+    }
+    
+    .cta-feature {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+    
+    /* Footer Mobile */
+    .footer-v2 {
+        padding: 32px 20px;
+    }
+    
+    .footer-logo {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+    
+    .footer-tagline {
+        font-size: 17px;
+    }
+    
+    .footer-credit {
+        font-size: 12px;
+    }
+    
+    /* Old classes fallback */
     .hero {
         padding: 40px 0 32px;
     }
