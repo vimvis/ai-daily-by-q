@@ -1,0 +1,454 @@
+:root {
+    --bg: #0a0a0b;
+    --bg-secondary: #111113;
+    --text: #f5f5f5;
+    --text-secondary: #888888;
+    --text-muted: #555555;
+    --accent: #c9a962;
+    --accent-dark: #8b7355;
+    --border: #222222;
+    --card-bg: #141416;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+}
+
+/* Grain texture overlay */
+.grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    z-index: 1000;
+}
+
+/* Header */
+.header {
+    padding: 48px 32px;
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+.byline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+}
+
+/* Main */
+.main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Hero */
+.hero {
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.kicker {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+.headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.date {
+    display: block;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background: var(--accent);
+    margin: 48px auto 0;
+}
+
+/* Section headers */
+.brief-header,
+.deep-dive-header,
+.archive-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 64px 0 32px;
+    border-top: 1px solid var(--border);
+}
+
+.section-number {
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+}
+
+.brief-header h2,
+.deep-dive-header h2,
+.archive-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+/* Brief list */
+.brief-list {
+    list-style: none;
+    counter-reset: item;
+}
+
+.brief-list li {
+    position: relative;
+    padding: 24px 0 24px 48px;
+    border-bottom: 1px solid var(--border);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.brief-list li::before {
+    counter-increment: item;
+    content: "0" counter(item);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.brief-list li strong {
+    display: block;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.brief-list li .desc {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.loading {
+    color: var(--text-muted);
+    font-style: italic;
+    padding-left: 0 !important;
+}
+
+.loading::before {
+    display: none !important;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    gap: 16px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 32px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    border-color: var(--accent-dark);
+    transform: translateY(-2px);
+}
+
+.card-label {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+}
+
+.card-arrow {
+    font-size: 24px;
+    color: var(--accent);
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-arrow {
+    transform: translateX(4px);
+}
+
+/* Archive */
+.archive-list {
+    margin-top: 8px;
+}
+
+.archive-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 24px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.archive-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+.archive-title {
+    font-size: 15px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.archive-link {
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.archive-link:hover {
+    color: var(--text);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 80px 32px;
+    margin-top: 80px;
+    border-top: 1px solid var(--border);
+}
+
+.footer p {
+    font-size: 14px;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.footer-meta {
+    font-size: 12px !important;
+    color: var(--text-muted) !important;
+    letter-spacing: 0.1em;
+}
+
+/* Detail pages */
+.detail-header {
+    padding: 80px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 48px;
+}
+
+.detail-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.detail-meta {
+    font-size: 12px;
+    color: var(--text-secondary);
+    letter-spacing: 0.05em;
+}
+
+.detail-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.detail-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 48px 0 24px;
+    color: var(--accent);
+}
+
+.detail-content h3 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin: 32px 0 16px;
+}
+
+.detail-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.detail-content ul,
+.detail-content ol {
+    margin-bottom: 20px;
+    padding-left: 24px;
+}
+
+.detail-content li {
+    margin-bottom: 8px;
+    line-height: 1.8;
+}
+
+/* Blockquote */
+blockquote {
+    border-left: 2px solid var(--accent);
+    padding-left: 24px;
+    margin: 32px 0;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Audio section */
+.audio-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 32px;
+    margin: 48px 0;
+}
+
+.audio-section h3 {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+audio {
+    width: 100%;
+    height: 40px;
+    filter: invert(1);
+}
+
+/* Back link */
+.back-link {
+    display: inline-block;
+    margin-top: 48px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header {
+        padding: 32px 20px;
+    }
+    
+    .logo {
+        font-size: 22px;
+    }
+    
+    .main {
+        padding: 0 20px;
+    }
+    
+    .hero {
+        padding: 48px 0 40px;
+    }
+    
+    .headline {
+        font-size: 36px;
+    }
+    
+    .brief-list li {
+        padding: 20px 0 20px 40px;
+        font-size: 14px;
+    }
+    
+    .card {
+        padding: 24px;
+    }
+    
+    .card h3 {
+        font-size: 22px;
+    }
+    
+    .archive-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .archive-title {
+        white-space: normal;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily by Q</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">AI Daily</div>
+            <div class="byline">by Q</div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="kicker">Daily Intelligence Briefing</p>
+                <h1 class="headline">
+                    <span class="date" id="today-date"></span>
+                </h1>
+                <div class="divider"></div>
+            </div>
+        </section>
+
+        <section class="brief">
+            <div class="brief-header">
+                <span class="section-number">01</span>
+                <h2>The Brief</h2>
+            </div>
+            
+            <ul class="brief-list" id="today-summary">
+                <li class="loading">Loading today's briefing...</li>
+            </ul>
+        </section>
+
+        <section class="deep-dive">
+            <div class="deep-dive-header">
+                <span class="section-number">02</span>
+                <h2>Deep Dive</h2>
+            </div>
+            
+            <div class="cards">
+                <a href="#" class="card" id="report-link">
+                    <span class="card-label">Report</span>
+                    <h3>Full Analysis</h3>
+                    <p>Comprehensive research report with insights and implications.</p>
+                    <span class="card-arrow">→</span>
+                </a>
+                
+                <a href="#" class="card" id="podcast-link">
+                    <span class="card-label">Audio</span>
+                    <h3>Podcast Episode</h3>
+                    <p>Listen on your commute. Professional anchor + casual analyst format.</p>
+                    <span class="card-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="archive">
+            <div class="archive-header">
+                <span class="section-number">03</span>
+                <h2>Archive</h2>
+            </div>
+            
+            <div class="archive-list" id="archive-list">
+                <!-- 아카이브 항목이 여기에 로드됨 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>AI Daily by Q — Curated for 형규형</p>
+        <p class="footer-meta">Powered by 모아 AI · 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

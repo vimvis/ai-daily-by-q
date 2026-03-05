@@ -1,0 +1,25 @@
+{
+    "date": "2026-03-05",
+    "headlines": [
+        {
+            "title": "OpenAI completes GPT-5 enterprise rollout",
+            "description": "40% API latency reduction enables real-time enterprise applications"
+        },
+        {
+            "title": "Anthropic launches Claude 4 with Constitutional AI 2.0",
+            "description": "Safety-first approach gains traction amid OpenAI controversy"
+        },
+        {
+            "title": "McKinsey reports 78% enterprise AI adoption",
+            "description": "$4.4T annual productivity impact projected for generative AI"
+        },
+        {
+            "title": "Google Gemini 2.5 Pro features 10M token context",
+            "description": "DeepMind AlphaFold 3 expands pharmaceutical partnerships"
+        },
+        {
+            "title": "Gartner positions Generative AI at Plateau of Productivity",
+            "description": "Agentic AI reaches Peak of Inflated Expectations"
+        }
+    ]
+}
