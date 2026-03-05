@@ -2,24 +2,24 @@
     "date": "2026-03-05",
     "headlines": [
         {
-            "title": "OpenAI completes GPT-5 enterprise rollout",
-            "description": "40% API latency reduction enables real-time enterprise applications"
+            "title": "OpenAI, GPT-5.2 및 Operator 에이전트 출시",
+            "description": "400K 컨텍스트 윈도우, 실시간 웹 자동화, 86.3% GUI 인식률 달성"
         },
         {
-            "title": "Anthropic launches Claude 4 with Constitutional AI 2.0",
-            "description": "Safety-first approach gains traction amid OpenAI controversy"
+            "title": "Anthropic, Claude Sonnet 4.6 공개",
+            "description": "100만 토큰 컨텍스트 지원, 연 매출 $25억 돌파, GitHub 4% 커밋 차지"
         },
         {
-            "title": "McKinsey reports 78% enterprise AI adoption",
-            "description": "$4.4T annual productivity impact projected for generative AI"
+            "title": "AI 스타트업 투자, 2월 $189B 기록 경신",
+            "description": "OpenAI $110B, Anthropic $30B, 전체 벤처 투자의 90%가 AI 관련"
         },
         {
-            "title": "Google Gemini 2.5 Pro features 10M token context",
-            "description": "DeepMind AlphaFold 3 expands pharmaceutical partnerships"
+            "title": "Claude Code, 개발자 도구 시장 장악",
+            "description": "6개월 만에 $10B ARR 달성, 평균 주당 20시간 사용, 생산성 200% 향상"
         },
         {
-            "title": "Gartner positions Generative AI at Plateau of Productivity",
-            "description": "Agentic AI reaches Peak of Inflated Expectations"
+            "title": "OpenAI 2026 로드맵 공개",
+            "description": "GPT-5 모델 군 세분화, 오픈소스 'gpt-oss' 발표, 디즈니-Sora 통합"
         }
     ]
 }
