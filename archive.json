@@ -2,13 +2,8 @@
     "items": [
         {
             "date": "2026-03-05",
-            "title": "OpenAI GPT-5 enterprise rollout, McKinsey State of AI 2026",
+            "title": "OpenAI GPT-5.2 & Operator, Anthropic Claude Sonnet 4.6, $189B AI funding",
             "url": "./2026-03-05/report.html"
-        },
-        {
-            "date": "2026-03-04",
-            "title": "Anthropic memory feature release, AI industry trends",
-            "url": "./2026-03-04/report.html"
         }
     ]
 }

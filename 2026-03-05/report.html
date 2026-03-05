@@ -99,16 +99,43 @@
             <a href="../" class="back-link">← Back to Archive</a>
         </article>
 
-        <section class="audio-section">
+        <section class="audio-section" id="audio-section">
             <h3>Listen to This Report</h3>
-            <audio controls>
+            <audio controls id="main-audio">
                 <source src="podcast.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-            <p style="margin-top: 16px; font-size: 13px;">
+            <p style="margin-top: 16px; font-size: 13px;" id="download-p">
                 <a href="podcast.mp3" download style="color: var(--accent);">Download MP3</a>
             </p>
         </section>
+
+        <script>
+            // podcast.mp3 존재 여부 체크
+            (function() {
+                const audioSection = document.getElementById('audio-section');
+                const audio = document.getElementById('main-audio');
+                const downloadP = document.getElementById('download-p');
+                
+                fetch('podcast.mp3', { method: 'HEAD' })
+                    .then(response => {
+                        if (!response.ok) {
+                            // 파일 없음 - Coming Soon 표시로 전환
+                            audio.style.display = 'none';
+                            downloadP.style.display = 'none';
+                            
+                            const comingSoon = document.createElement('p');
+                            comingSoon.style.cssText = 'color: var(--text-secondary); font-style: italic; margin-top: 16px;';
+                            comingSoon.innerHTML = '🎙️ 팟캐스트가 준비 중입니다. 매일 아침 7:30에 업데이트됩니다.';
+                            audioSection.appendChild(comingSoon);
+                        }
+                    })
+                    .catch(() => {
+                        audio.style.display = 'none';
+                        downloadP.style.display = 'none';
+                    });
+            })();
+        </script>
     </main>
 
     <footer class="footer">

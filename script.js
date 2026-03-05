@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 오늘 날짜 표시
+    // 오늘 날짜 표시 (한국 시간 기준)
     const dateElement = document.getElementById('today-date');
     if (dateElement) {
-        const today = new Date();
+        const now = new Date();
+        const koreaTime = new Date(now.getTime() + (9 * 60 * 60 * 1000));
         const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
-        dateElement.textContent = today.toLocaleDateString('ko-KR', options);
+        dateElement.textContent = koreaTime.toLocaleDateString('ko-KR', options);
     }
     
     // 오늘의 뉴스 로드
@@ -19,8 +20,14 @@ async function loadTodayBrief() {
     if (!container) return;
     
     try {
-        const today = new Date().toISOString().split('T')[0];
-        const response = await fetch(`./${today}/summary.json`);
+        // 한국 시간 (UTC+9) 기준 날짜 계산
+        const now = new Date();
+        const koreaTime = new Date(now.getTime() + (9 * 60 * 60 * 1000));
+        const today = koreaTime.toISOString().split('T')[0];
+        
+        // 캐시 버스팅 추가
+        const cacheBuster = Date.now();
+        const response = await fetch(`./${today}/summary.json?v=${cacheBuster}`);
         
         if (!response.ok) {
             container.innerHTML = '<li class="loading">오늘의 브리핑을 준비 중입니다.<br>매일 아침 7시에 업데이트됩니다.</li>';
@@ -71,7 +78,9 @@ async function loadArchive() {
     if (!container) return;
     
     try {
-        const response = await fetch('./archive.json');
+        // 캐시 버스팅 추가
+        const cacheBuster = Date.now();
+        const response = await fetch(`./archive.json?v=${cacheBuster}`);
         if (!response.ok) return;
         
         const data = await response.json();
