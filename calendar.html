@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hangout - 캘린더 일정 추가</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .logo {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+        .event-info {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .event-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+        .event-row:last-child {
+            margin-bottom: 0;
+        }
+        .icon {
+            width: 24px;
+            margin-right: 12px;
+            text-align: center;
+        }
+        .label {
+            color: #666;
+            min-width: 60px;
+        }
+        .value {
+            color: #333;
+            font-weight: 600;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .btn-iphone {
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,122,255,0.4);
+        }
+        .btn-android {
+            background: linear-gradient(135deg, #3DDC84 0%, #2E7D32 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(61,220,132,0.4);
+        }
+        .btn-icon {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .discord-link {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        .discord-link p {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .discord-link a {
+            color: #5865F2;
+            text-decoration: none;
+            font-weight: 600;
+            word-break: break-all;
+        }
+        .hint {
+            margin-top: 20px;
+            padding: 12px;
+            background: #fff3cd;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #856404;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🤖</div>
+        <h1>AI Hangout</h1>
+        <p class="subtitle">매주 토요일 아침, AI 이야기</p>
+        
+        <div class="event-info">
+            <div class="event-row">
+                <span class="icon">📅</span>
+                <span class="label">일정:</span>
+                <span class="value">매주 토요일</span>
+            </div>
+            <div class="event-row">
+                <span class="icon">🕘</span>
+                <span class="label">시간:</span>
+                <span class="value">오전 9:00</span>
+            </div>
+            <div class="event-row">
+                <span class="icon">📍</span>
+                <span class="label">장소:</span>
+                <span class="value">Discord</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="data:text/calendar;charset=utf8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0ABEGIN%3AVEVENT%0ADTSTART%3BTZID%3DAsia%2FSeoul%3A20260308T090000%0ARRULE%3AFREQ%3DWEEKLY%3BBYDAY%3DSA%0ASUMMARY%3AAI%20Hangout%0ADESCRIPTION%3AJoin%20us%20at%20https%3A%2F%2Fdiscord.gg%2F6y7hrN5G2U%0AURL%3Ahttps%3A%2F%2Fdiscord.gg%2F6y7hrN5G2U%0AEND%3AVEVENT%0AEND%3AVCALENDAR" class="btn btn-iphone">
+                <span class="btn-icon">🍎</span>
+                <span>iPhone 캘린더에 추가</span>
+            </a>
+            
+            <a href="data:text/calendar;charset=utf8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0ABEGIN%3AVEVENT%0ADTSTART%3BTZID%3DAsia%2FSeoul%3A20260308T090000%0ARRULE%3AFREQ%3DWEEKLY%3BBYDAY%3DSA%0ASUMMARY%3AAI%20Hangout%0ADESCRIPTION%3AJoin%20us%20at%20https%3A%2F%2Fdiscord.gg%2F6y7hrN5G2U%0AURL%3Ahttps%3A%2F%2Fdiscord.gg%2F6y7hrN5G2U%0AEND%3AVEVENT%0AEND%3AVCALENDAR" class="btn btn-android">
+                <span class="btn-icon">🤖</span>
+                <span>Android 캘린더에 추가</span>
+            </a>
+        </div>
+
+        <div class="discord-link">
+            <p>Discord 서버 주소:</p>
+            <a href="https://discord.gg/6y7hrN5G2U" target="_blank">https://discord.gg/6y7hrN5G2U</a>
+        </div>
+
+        <div class="hint">
+            💡 버튼을 클릭하면 캘린더 앱이 열리며<br>"AI Hangout" 일정이 자동으로 추가됩니다
+        </div>
+    </div>
+</body>
+</html>
