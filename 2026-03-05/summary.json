@@ -3,23 +3,23 @@
     "headlines": [
         {
             "title": "OpenAI, GPT-5.2 및 Operator 에이전트 출시",
-            "description": "400K 컨텍스트 윈도우, 실시간 웹 자동화, 86.3% GUI 인식률 달성"
+            "description": "40만 토큰 컨텍스트, 86.3% GUI 인식률. 디즈니-Sora 통합으로 마블·스타워즈 IP 활용 가능"
         },
         {
-            "title": "Anthropic, Claude Sonnet 4.6 공개",
-            "description": "100만 토큰 컨텍스트 지원, 연 매출 $25억 돌파, GitHub 4% 커밋 차지"
+            "title": "Anthropic, Claude Code로 개발자 시장 장악",
+            "description": "GitHub 커밋 4% 점유, 연 매출 3,750억원. Claude Sonnet 4.6은 100만 토큰 지원"
         },
         {
-            "title": "AI 스타트업 투자, 2월 $189B 기록 경신",
-            "description": "OpenAI $110B, Anthropic $30B, 전체 벤처 투자의 90%가 AI 관련"
+            "title": "AI 스타트업, 2월 한 달에 28조원 투자 유치",
+            "description": "전체 벤처 투자의 90%가 AI로 집중. OpenAI 165조원, Anthropic 45조원 선두"
         },
         {
-            "title": "Claude Code, 개발자 도구 시장 장악",
-            "description": "6개월 만에 $10B ARR 달성, 평균 주당 20시간 사용, 생산성 200% 향상"
+            "title": "OpenAI 2026 로드맵: 모델 포트폴리오 전환",
+            "description": "GPT-5 개발자용, GPT-5.2 엔터프라이즈용, gpt-oss 오픈소스로 세분화"
         },
         {
-            "title": "OpenAI 2026 로드맵 공개",
-            "description": "GPT-5 모델 군 세분화, 오픈소스 'gpt-oss' 발표, 디즈니-Sora 통합"
+            "title": "에이전틱 시대 개막: AI가 소프트웨어를 먹다",
+            "description": "2026년은 AI가 어시스턴트에서 자율 근로자로 전환되는 해. 조직 재설계 필수"
         }
     ]
 }
