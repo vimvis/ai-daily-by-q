@@ -1,0 +1,109 @@
+# AI Daily Podcast Script - March 7, 2026
+# Host: Minjun (Professional, energetic)
+# Expert: Dr. Hyunwoo (Calm, analytical)
+# Duration: ~6 minutes
+
+---
+
+**[OPENING]**
+
+**Minjun:**
+Hey there, Hyungkyu! Welcome to AI Daily. It's Saturday, March 7th, 2026. I'm Minjun, and joining me as always is Dr. Hyunwoo. Good morning!
+
+**Dr. Hyunwoo:**
+Good morning, Hyungkyu. Good morning, Minjun. It's been another big week in AI. We've got OpenAI's GPT-5 preview, Anthropic going all-in on enterprise, and some surprising numbers from McKinsey.
+
+**Minjun:**
+Exactly! Let's dive right in. First up—OpenAI just dropped a preview of GPT-5. They're claiming 3x better reasoning performance. What's the real story here?
+
+**Dr. Hyunwoo:**
+This is significant. GPT-5 isn't just an incremental update. The new multimodal architecture handles video analysis and coding with dramatically improved accuracy. But here's the key point—they're running enterprise beta tests. This tells us OpenAI is shifting focus from consumer chatbots to serious B2B deployments.
+
+**Minjun:**
+So they're chasing the big enterprise money now?
+
+**Dr. Hyunwoo:**
+Precisely. The 3x reasoning improvement means complex business workflows—legal document analysis, financial modeling, code refactoring—these become actually viable for automation.
+
+---
+
+**[SEGMENT 2: Anthropic Claude Enterprise]**
+
+**Minjun:**
+Speaking of enterprise—Anthropic just unveiled 'Claude Enterprise.' They're talking 40% faster document processing and native SAP and Salesforce integration.
+
+**Dr. Hyunwoo:**
+This is Anthropic's response to OpenAI's enterprise push. The Salesforce and SAP integrations are crucial—these are the systems that actually run Fortune 500 companies. Claude is positioning itself as the AI that understands your existing infrastructure.
+
+**Minjun:**
+So it's not just about having a smart chatbot anymore?
+
+**Dr. Hyunwoo:**
+Exactly. The winners in this space will be whoever integrates seamlessly with systems companies already use. Nobody wants to rebuild their entire tech stack for AI.
+
+---
+
+**[SEGMENT 3: Google Gemini 2.0 on Android 16]**
+
+**Minjun:**
+Google's announcement caught my attention—they're putting Gemini 2.0 directly into Android 16. Real-time translation and image generation, even offline.
+
+**Dr. Hyunwoo:**
+This is Google's privacy play. On-device AI means your data never leaves your phone. For enterprise customers dealing with sensitive information, this is a massive selling point. It also reduces latency—you're not waiting for server round-trips.
+
+**Minjun:**
+So Google is betting that privacy becomes the differentiator?
+
+**Dr. Hyunwoo:**
+Yes. As AI regulation tightens globally, having robust on-device processing becomes a competitive advantage, not just a feature.
+
+---
+
+**[SEGMENT 4: McKinsey Report]**
+
+**Minjun:**
+McKinsey dropped some eye-popping numbers this week. They're predicting 80% enterprise AI adoption by 2026. And get this—companies are seeing average 300% ROI.
+
+**Dr. Hyunwoo:**
+The 80% figure is ambitious but realistic for knowledge-work industries. Manufacturing and finance are leading because they have clear metrics—faster processing, fewer errors, 24/7 operation.
+
+**Minjun:**
+300% ROI though—that's insane.
+
+**Dr. Hyunwoo:**
+It's early-stage efficiency gains. The companies seeing these returns are automating high-volume, repetitive tasks. As AI moves into more complex decision-making, those numbers will normalize—but the productivity impact is real.
+
+---
+
+**[SEGMENT 5: Cerebras Funding]**
+
+**Minjun:**
+Last story—AI chip startup Cerebras raised $500 million in Series D. They're building wafer-scale data center chips to compete directly with NVIDIA.
+
+**Dr. Hyunwoo:**
+This is the infrastructure arms race. Training frontier models requires massive compute. Cerebras is betting that specialized AI chips can outperform general-purpose GPUs. If they deliver on their 2027 commercialization target, we could see real competition in the AI hardware space.
+
+**Minjun:**
+More competition means better prices for everyone, right?
+
+**Dr. Hyunwoo:**
+In theory, yes. But NVIDIA's ecosystem advantage—CUDA, developer tools, existing deployments—is massive. Cerebras needs to be significantly better, not just comparable.
+
+---
+
+**[CLOSING]**
+
+**Minjun:**
+Let me summarize: GPT-5 is coming with 3x reasoning power, Claude wants to be your enterprise AI assistant, Google is going private with on-device AI, McKinsey says 80% of companies will adopt AI this year with 300% returns, and Cerebras is challenging NVIDIA's chip monopoly.
+
+**Dr. Hyunwoo:**
+The through-line here is enterprise maturation. AI is moving from experimentation to infrastructure. Companies aren't asking "Should we use AI?" anymore—they're asking "How fast can we deploy it?" For business leaders like Hyungkyu, the question is no longer about technology readiness. It's about organizational readiness—training, change management, and strategic integration.
+
+**Minjun:**
+That's our show for today. Hyungkyu, the AI world keeps moving fast. We'll be back Monday morning at 7 AM. Take care!
+
+**Dr. Hyunwoo:**
+Thank you for listening. Have a great weekend, Hyungkyu.
+
+---
+**Total estimated length: ~6 minutes**
