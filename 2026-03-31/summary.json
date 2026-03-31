@@ -1,0 +1,25 @@
+{
+  "date": "2026-03-31",
+  "headlines": [
+    {
+      "title": "[NVIDIA] GTC 2026에서 공개된 에이전틱 AI 팩토리 솔루션",
+      "description": "47개 AI 에이전트가 구매 프로세스 전체를 자동화하는 실제 적용 사례 발표. 24시간 무인 운영 가능한 스마트 팩토리 구현"
+    },
+    {
+      "title": "[Lumentum] AI 데이터센터용 레이저 공장 북미에 신설",
+      "description": "노스캐롤라이나에 240,000平方피트 규모 InP 기반 광학 디바이스 공장 건설. NVIDIA를 첫 고객으로 2028년 가동 예정"
+    },
+    {
+      "title": "[Tesla/SpaceX] 'Terafab' AI 칩 대규모 공장 프로젝트 발표",
+      "description": "일론 머스크의 Tesla와 SpaceX가 텍사스 오스틴에 AI 칩 제조 공장 건설. 자체 AI 칩 생산 인프라 구축"
+    },
+    {
+      "title": "[Glemad] 자율 사이버 방어 AI 시스템 'ADT' 출시",
+      "description": "초당 45,000개 보안 이벤트 처리, 0.8분 평균 탐지 시간, 95% 자율 해결율. 실시간 위협 대응 가능한 AI 보안 솔루션"
+    },
+    {
+      "title": "[Fast Company] 2026년 최고의 혁신 AI 기업 선정",
+      "description": "Abridge(의료), GC AI(법률) 등 도메인 특화 AI 기업들이 선정. 전문가 수준의 정확도와 측정 가능한 성과로 엔터프라이즈 AI 새 표준 제시"
+    }
+  ]
+}
